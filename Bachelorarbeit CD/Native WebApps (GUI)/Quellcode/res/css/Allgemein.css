@@ -1,0 +1,441 @@
+/* Allgemein */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #3C3FFF;
+}
+
+a:hover{
+    color: #272AFF;
+    text-decoration: underline; 
+}
+
+/* Positionierung */
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.center{
+  margin: auto;
+}
+
+/*Container*/
+
+.smartphone-container{
+  margin: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  .smartphone-container{
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .smartphone-container{
+    width: 500px;
+  }
+}
+
+.navbar{
+  overflow: hidden;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.container-rounded-bottom{
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.container-rounded-top{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.container-rounded-top-left{
+  border-top-left-radius: 15px;
+}
+
+.container-rounded-top-right{
+  border-top-right-radius: 15px;
+}
+
+.container-rounded-bottom-left{
+  border-bottom-left-radius: 15px;
+}
+
+.container-rounded-bottom-right{
+  border-bottom-right-radius: 15px;
+}
+
+.container-rounded{
+  border-radius: 15px;
+}
+
+/*Objects*/
+
+input{
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  padding: 10px;
+  text-align: center;
+}
+
+.button{
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgba(1,1,1,0);
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.button:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.button:active{
+  border-style: solid;
+}
+
+.badge{
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  font-weight: bold;
+  border-color: rgba(1,1,1,0);
+  padding: 5px;
+}
+
+.alert{
+  width: 90%;
+  position: fixed;
+  margin: auto;
+  left: 0px;
+  right: 0px;
+  bottom: 20px;
+  z-index: 99;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/*colors*/
+
+.blue-interactive{
+  background-color: #0C86FF;
+  color: white;
+}
+
+.blue-interactive:hover{
+  background-color: #006EDC;
+  color: white;
+}
+
+.blue-interactive:active{
+  border-color: #3E9EFF;
+}
+
+.green-interactive{
+  background-color: #12CC49;
+  color: white;
+}
+
+.green-interactive:hover{
+  background-color: #17983D;
+  color: white;
+}
+
+.green-interactive:active{
+  border-color: #92F7AF;
+}
+
+.red-interactive{
+  background-color: #E34545;
+  color: white;
+}
+
+.red-interactive:hover{
+  background-color: #C03E3E;
+  color: white;
+}
+
+.red-interactive:active{
+  border-color: #E59393;
+}
+
+.yellow-interactive{
+  background-color: #ECF139;
+  color: black;
+}
+
+.yellow-interactive:hover{
+  background-color: #D2D722;
+  color: #383838;
+}
+
+.yellow-interactive:active{
+  border-color: #EFF1A8;
+}
+
+.orange-interactive{
+  background-color: #F0AB6B;
+  color: white;
+}
+
+.orange-interactive:hover{
+  background-color: #E6852C;
+  color: white;
+}
+
+.orange-interactive:active{
+  border-color: #FFDDBD;
+}
+
+.brown-interactive{
+  background-color: #8C7457;
+  color: white;
+}
+
+.brown-interactive:hover{
+  background-color: #70583B;
+  color: white;
+}
+
+.brown-interactive:active{
+  border-color: #9A8B78;
+}
+
+.pink-interactive{
+  background-color: #F484DA;
+  color: white;
+}
+
+.pink-interactive:hover{
+  background-color: #F453CF;
+  color: white;
+}
+
+.pink-interactive:active{
+  border-color: #FFBEF0;
+}
+
+.violet-interactive{
+  background-color: #9F6EE8;
+  color: white;
+}
+
+.violet-interactive:hover{
+  background-color: #7F47D3;
+  color: white;
+}
+
+.violet-interactive:active{
+  border-color: #B794EC;
+}
+
+.turquoise-interactive{
+  background-color: #47D3D1;
+  color: white;
+}
+
+.turquoise-interactive:hover{
+  background-color: #23B2B0;
+  color: white;
+}
+
+.turquoise-interactive:active{
+  border-color: #ABE8E7;
+}
+
+.white-interactive{
+  background-color: #FAFAFA;
+  color: black;
+}
+
+.white-interactive:hover{
+  background-color: #C6C6C6;
+  color: #383838;
+}
+
+.white-interactive:active{
+  border-color: white;
+}
+
+.black-interactive{
+  background-color: #202020;
+  color: white;
+}
+
+.black-interactive:hover{
+  background-color: black;
+  color: white;
+}
+
+.black-interactive:active{
+  border-color: #CECECE;
+}
+
+.grey-interactive{
+  background-color: #898989;
+  color: white;
+}
+
+.grey-interactive:hover{
+  background-color: #5F5F5F;
+  color: white;
+}
+
+.grey-interactive:active{
+  border-color: #B6B6B6;
+}
+
+.blue-light{
+  background-color: #9DD0FF;
+  border: 1px solid #6BB5F9;
+  color: #264EA4;
+}
+
+.green-light{
+  background-color: #8ADD88;
+  border: 1px solid #5AE057;
+  color: #278E25;
+}
+
+.red-light{
+  background-color: #E38181;
+  border: 1px solid #E05E5E;
+  color: #8E2525;
+}
+
+.yellow-light{
+  background-color: #F6FF84;
+  border: 1px solid #F3FF5B;
+  color: #9DA71E;
+}
+
+.pink-light{
+  background-color: #FFB2EB;
+  border: 1px solid #FF82DF;
+  color: #FF4BD1;
+}
+
+.violet-light{
+  background-color: #DD99FF;
+  border: 1px solid #C44BFF;
+  color: #6B1396;
+}
+
+.orange-light{
+  background-color: #FED7AA;
+  border: 1px solid #FFB55F;
+  color: #E98919;
+}
+
+.brown-light{
+  background-color: #937C61;
+  border: 1px solid #79654D;
+  color: #5E4221;
+}
+
+.turqouise-light{
+  background-color: #A0D9D5;
+  border: 1px solid #69D5CD;
+  color: #28867F;
+}
+
+.grey-light{
+  background-color: #E1E1E1;
+  border: 1px solid #B1B1B1;
+  color: #828282;
+}
+
+.white-light{
+  background-color: #FFFFFF;
+  border: 1px solid #EFEFEF;
+  color: #808080;
+}
+
+.black-light{
+  background-color: #262626;
+  border: 1px solid #000000;
+  color: #FFFFFF;
+}
+
+.blue-dark{
+  background-color: rgb(34, 53, 146);
+  color: white;
+}
+
+.green-dark{
+  background-color: rgb(73, 173, 72);
+  color: white;
+}
+
+.red-dark{
+  background-color: rgb(241, 89, 89);
+  color: white;
+}
+
+.yellow-dark{
+  background-color: rgb(244, 255, 88);
+  color: black;
+}
+
+.pink-dark{
+  background-color: rgb(255, 121, 219);
+  color: white;
+}
+
+.violet-dark{
+  background-color: rgb(68, 0, 102);
+  color: white;
+}
+
+.orange-dark{
+  background-color: rgb(224, 121, 3);
+  color: white;
+}
+
+.brown-dark{
+  background-color: rgb(95, 57, 14);
+  color: white;
+}
+
+.turqouise-dark{
+  background-color: rgb(54, 148, 142);
+  color: white;
+}
+
+.grey-dark{
+  background-color: #838383;
+  color: black;
+}
+
+.white-dark{
+  background-color: #F1F1F1;
+  color: black;
+}
+
+.black-dark{
+  background-color: #202020;
+  color: white;
+}
